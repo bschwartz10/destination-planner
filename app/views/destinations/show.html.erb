@@ -19,11 +19,16 @@
 
   <div class="row">
     <h4>Forecast for <%= @destination.name %>:</h4>
-    
+
   </div>
 
   <div class="row">
     <%= link_to 'Edit', edit_destination_path(@destination) %> |
     <%= link_to 'Back', destinations_path %>
   </div>
+
+  <div class="row">
+    <p>High: <%= @high %> degrees</p>
+    <p>Low: <%=  @low %> degrees</p>
+    <p>Date: <%= @date %> </p>
 </div>
