@@ -23,9 +23,9 @@ RSpec.feature "See weather for indiviual destination", :type => :feature do
     expect(page).to have_content('Seattle')
     expect(page).to have_content('Zip: 98112')
     expect(page).to have_content('Description: Rainy')
-    expect(page).to have_content('Date: Thursday, September 28th')
+    expect(page).to have_content('Date: Wednesday, September 29th')
     expect(page).to have_content('High: 81 degrees')
-    expect(page).to have_content('Low: 59 degrees')
+    expect(page).to have_content('Low: 58 degrees')
 
   end
 end

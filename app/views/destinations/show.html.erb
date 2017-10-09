@@ -28,7 +28,9 @@
   </div>
 
   <div class="row">
-    <p>High: <%= @high %> degrees</p>
-    <p>Low: <%=  @low %> degrees</p>
-    <p>Date: <%= @date %> </p>
+    <% @forecasts.each do |forecast| %>
+      <p>High: <%= forecast.high %> degrees</p>
+      <p>Low: <%= forecast.low %> degrees</p>
+      <p>Date: <%= forecast.date %> </p>
+    <% end %>
 </div>
