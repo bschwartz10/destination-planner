@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe ForecastService do
+xdescribe ForecastService do
   it "makes an api call to WU for a given city" do
     raw_forecast = ForecastService.forecast_10_day('80218')
     first_day = raw_forecast.first

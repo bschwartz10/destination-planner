@@ -10,7 +10,6 @@ class DestinationsController < ApplicationController
   # GET /destinations/1
   # GET /destinations/1.json
   def show
-    @date = weekday + ', ' + month + ' ' + day + 'th'
     @forecasts = Forecast.forecast_10_day(@destination.zip)
   end
 
